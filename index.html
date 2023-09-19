@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <title>Search Objects from JSON File Present Within HTML Code</title> -->
+  <title>MSN Shopping Search</title>
+  <script type="text/javascript">
+    // Define JSON data within HTML code
+    var jsonData = [
+      {
+        "name": "Product 1",
+        "price": 10.99
+      },
+      { "name":"Liza Camera Bag",
+        "price": 165
+      },
+      {
+        "name": "jabra panacast",
+        "price": 160
+      },
+      {
+        "name": "30\" x 40\" Gabby Large Gusset Pillow Bed Assortment",
+        "price": 15
+      },
+      {
+        "name": "Novogratz Brittany 81.5'' Upholstered Sleeper Sofa",
+        "price": 237.61
+      },
+      {
+        "name": "Vice Force Blue golf",
+        "price": 142
+      },
+      {
+        "name": "Wet Brush 4-piece Detangler Collection",
+        "price": 25
+      },
+      {
+        "name": "Geek Heat Oscillating Ceramic Heater with Humidifier",
+        "price": 40
+      },
+      {
+        "name": "Essentials Women's Logo Leggings",
+        "price": 19.99
+      },
+      {
+        "name": "Nike Mercurial Vapor 15 Elite",
+        "price": 140
+      },
+      {
+        "name": "Nike Air Max 97",
+        "price": 116
+      },
+      {
+        "name": "GTRACING 2023 New Gaming Chair With Pocket Spring Cushion,Footrest Series LR002",
+        "price": 100
+      },
+      {
+        "name": "Custom Iced Number Baguette Pendant",
+        "price": 89.40
+      },
+      {
+        "name": "Raptor 14L Backpack",
+        "price": 98.97
+      },
+      {
+        "name": "Team Associated RC10B74.1D Team 1/10 4WD Off-Road Electric Buggy Kit",
+        "price": 350
+      },
+      {
+        "name": "SOL ULTIMATE ICONS",
+        "price": 225.00
+      },
+      {
+        "name": "Adidas UCL PRO ISTANBUL BALL",
+        "price": 85
+      },
+      {
+        "name": "Adidas SATURDAY 2.0 PLUS HAT",
+        "price": 12
+      },
+      {
+        "name": "Adidas Racer TR23 Shoes Cloud White 8 - Womens Originals Shoes",
+        "price": 52
+      },
+      {
+        "name": "Adidas Essentials Warm-Up 3-Stripes Track Jacket Black XL",
+        "price": 22
+      },
+      {
+        "name": "Lorna Maseko 11-piece Forged Induction-Ready Cookware Set",
+        "price": 120
+      },
+      {
+        "name": "Lainie Multifunction",
+        "price": 20
+      },
+      {
+        "name": "Bulova Surveyor Classic",
+        "price": 340
+      },
+      {
+        "name": "Women 3D Applique Maxi Dress",
+        "price": 99.99
+      },
+      {
+        "name": "Nike Sportswear Club Fleece Pullover Hoodie",
+        "price": 52.97
+      },
+      {
+        "name": "Mosaic Maker",
+        "price": 59.99
+      },
+      {
+        "name": "Heidi Daus Alta Moda Multi-Cut Stone Bracelet 3-piece Bracelet Set",
+        "price": 150
+      },
+      {
+        "name": "The Children’s Place Womens Mommy And Me Velour Fit And Flare Dress",
+        "price": 48.71
+      },
+      {
+        "name": "125 Gluten-Free Vegetarian Recipes: Quick and Delicious Mouthwatering",
+        "price": 18
+      },
+      {
+        "name": "Kent Logo Jacquard Nylon Sling Pack",
+        "price": 149
+      },
+      {
+        "name": "Women Spun Rayon Cardigan",
+        "price": 49.99
+      },
+      {
+        "name": "Med Couture Touch",
+        "price": 24
+      },
+      {
+        "name": "Michael Kors Kent Logo Jacquard Nylon Sling Pack",
+        "price": 149
+      },
+      {
+        "name": "BISSELL Little Green® HydroSteam® Pet Portable Carpet Cleaner",
+        "price": 199.99
+      },
+      {
+        "name": "Rugs USA Multi Majesta Flourishing Medallion Rug",
+        "price": 92.90
+      },
+      {
+        "name": "RIEDEL Spey Barware Set (4 DOF + 4 Highball) Crystal",
+        "price": 99.99
+      },
+      {
+        "name": "Kitchenhq 2-Piece Set Of Pull Choppers In Gift Boxes",
+        "price": 17.95
+      },
+      {
+        "name": "HOMCOM Convertible Sofa Bed With 5 Position, Folding",
+        "price": 149.99
+      },
+      {
+        "name": "Vera Bradley Bucket Crossbody Bag Women In Dreamer Paisley",
+        "price": 49
+      },
+      {
+        "name": "Pearl Drop Earrings",
+        "price": 24
+      },
+      {
+        "name": "Brown/White Indoor Area Rug",
+        "price": 20
+      },
+      {
+        "name": "Chico's Multistrand Convertible Necklace Chico's $40",
+        "price": 40
+      },
+      {
+        "name": "Wet Brush 4-Piece Detangler Collection",
+        "price": 24.99
+      },
+      {
+        "name": "2 X 2ft LED Grid Frame Light, 120-277V, Selectable Wattage & CCT",
+        "price": 69.99
+      },
+      {
+        "name": "All The Feels Tan Suede Sling Bag With Printed Removable Strap",
+        "price": 36
+      },
+      {
+        "name": "Stockton Roadside Tool Kit",
+        "price": 49
+      },
+      {
+        "name": "Invicta Coalition Forces X-Wing Swiss ETA G10.212 Caliber Men's Watch",
+        "price": 69.90
+      },
+      {
+        "name": "Puma essential women leggings",
+        "price": 19.99
+      },
+      {
+        "name": "vigoss women ankle straight high rise",
+        "price": 53.90
+      },
+      {
+        "name": "Company Cotton turkish",
+        "price": 47.99
+      },
+      {
+        "name": "Flowers - captivating cobalt",
+        "price": 43.99
+      },
+      {
+        "name": "Kitchenhq Quick Push press",
+        "price": 21.95
+      },
+      // {
+      //   "name": "Stockton Roadside Tool Kit",
+      //   "price": 49
+      // },
+      // {
+      //   "name": "Stockton Roadside Tool Kit",
+      //   "price": 49
+      // },
+      // {
+      //   "name": "Stockton Roadside Tool Kit",
+      //   "price": 49
+      // },
+      // {
+      //   "name": "Stockton Roadside Tool Kit",
+      //   "price": 49
+      // },
+    ];
+
+    // Define search function
+    function search() {
+      var input = document.getElementById("searchInput");
+      var query = input.value.toLowerCase();
+      var results = [];
+
+      for (var i = 0; i < jsonData.length; i++) {
+        if (jsonData[i].name.toLowerCase().includes(query)) {
+          results.push(jsonData[i]);
+        }
+      }
+
+      var searchResults = document.getElementById("searchResults");
+      searchResults.innerHTML = "";
+
+      for (var i = 0; i < results.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = results[i].name + " - $" + results[i].price;
+        searchResults.appendChild(listItem);
+      }
+    }
+  </script>
+</head>
+<body>
+  <center>
+  <h1>MSN Shopping Search</h1>
+
+  <input type="text" id="searchInput" placeholder="Search..." style="width: 75%; height: 50px;" onkeyup="search()" />
+
+  <ul style="font-size: larger;" id="searchResults"></ul>
+</center>
+</body>
+</html>
